@@ -1,5 +1,5 @@
 //Variables del Estudio Contable
-const suma_maxima_servicios = 20;
+const suma_maxima_servicios = 15000;
 const max_servicios = 2;
 const descuento = 0.15;
 const iva = 0.105;
@@ -24,11 +24,11 @@ while ((nombre_servicio != "ESC") && (nombre_servicio != null)) {
     }
 }
 
-// Aplico el IVA
+// Aplico el IVA sobre el servicio
 suma_servicio = suma_servicio + (suma_servicio * iva);
 console.log("c/IVA: " + suma_servicio);
 
-// Valido si supera la cantidad max de productos y el monto máximo
+// Valido si supera la cantidad max de servicios y el monto máximo
 if ((suma_servicio >= suma_maxima_servicios) || (total_servicio >= max_servicios)) {
     suma_servicio = suma_servicio - (suma_servicio * descuento);
     console.log("c/Descuento: " + suma_servicio);
