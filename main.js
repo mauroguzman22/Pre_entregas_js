@@ -53,6 +53,8 @@ const productos = [];
 productos.push(new Producto("Auditorias", 120000));
 productos.push(new Producto("Contabilidad General", 80000));
 productos.push(new Producto("Armado de papeles de trabajo", 100000));
+productos.push(new Producto("Facturacion", 10000));
+productos.push(new Producto("Armado de Balances", 300000));
 console.log(productos);
 
 for (const producto of productos) {
