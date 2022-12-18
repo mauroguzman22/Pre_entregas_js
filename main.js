@@ -25,8 +25,40 @@ while ((nombre_servicio != "ESC") && (nombre_servicio != null)) {
 }
 
 // Aplico el IVA sobre el servicio
-suma_servicio = suma_servicio + (suma_servicio * iva);
-console.log("c/IVA: " + suma_servicio);
+/* suma_servicio = suma_servicio + (suma_servicio * iva);
+console.log("c/IVA: " + suma_servicio); */
+
+//Funcion IVA
+function Calculariva(){
+    return suma_servicio = suma_servicio + (suma_servicio* iva)
+}
+let resultado = Calculariva() ;
+console.log("c/IVA " + resultado)
+
+//Proximos Servicios del Estudio contable para posicionar en un carrito
+class Producto {
+    constructor(nombre, precio) {
+        this.nombre = nombre.toUpperCase();
+        this.precio = parseFloat(precio);
+        this.vendido = false;
+        this.iva = 1.105;
+    }
+
+    sumaIva() {
+        this.precio = this.precio * this.iva;
+    }
+}
+
+const productos = [];
+productos.push(new Producto("Auditorias", 120000));
+productos.push(new Producto("Contabilidad General", 80000));
+productos.push(new Producto("Armado de papeles de trabajo", 100000));
+console.log(productos);
+
+for (const producto of productos) {
+    producto.sumaIva();
+    console.log("Nombre: " + producto.nombre + ", Precio: $" + producto.precio);
+}
 
 // Valido si supera la cantidad max de servicios y el monto máximo
 if ((suma_servicio >= suma_maxima_servicios) || (total_servicio >= max_servicios)) {
