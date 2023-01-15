@@ -1,4 +1,4 @@
-//Variables del Estudio Contable
+/*//Variables del Estudio Contable
 const suma_maxima_servicios = 15000;
 const max_servicios = 2;
 const descuento = 0.15;
@@ -28,7 +28,7 @@ while ((nombre_servicio != "ESC") && (nombre_servicio != null)) {
 /* suma_servicio = suma_servicio + (suma_servicio * iva);
 console.log("c/IVA: " + suma_servicio); */
 
-//Funcion IVA
+/*//Funcion IVA
 function Calculariva(){
     return suma_servicio = suma_servicio + (suma_servicio* iva)
 }
@@ -69,4 +69,4 @@ if ((suma_servicio >= suma_maxima_servicios) || (total_servicio >= max_servicios
 }
 
 // Salida Final
-alert("La Suma Total de Servicios es: $" + suma_servicio.toFixed(2) + " Pesos!");
+alert("La Suma Total de Servicios es: $" + suma_servicio.toFixed(2) + " Pesos!"); */
