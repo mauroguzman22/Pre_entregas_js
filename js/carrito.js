@@ -13,11 +13,14 @@ return JSON.parse(localStorage.getItem("carrito")) || []
 const agregarAlCarrito = (id) => {
 
     const Productos= cargarProductosLS();
-    const productos_carrito = cargarProductoCarrito();
+    const Productos_carrito = cargarProductoCarrito();
+    console.log(Productos_carrito)
     const Producto = Productos.find(item => item.id === id)
+    console.log(Producto)
     productos_carrito.push(Producto);
-    guardarProductosCarrito(productos_carrito);
-
+    console.log(Productos_carrito)
+    guardarProductosCarrito(Productos_carrito);
+    renderBotonCarrito();
 }
 const vaciarCarrito = () => {
 
@@ -26,14 +29,14 @@ const vaciarCarrito = () => {
 
 
 const totalCarrito = () =>{
-    const productos_carrito = cargarProductoCarrito();
-    return productos_carrito.length;
+    const Productos_carrito = cargarProductoCarrito();
+    return Productos_carrito.length;
 }
 
 
 const sumaCarrito = () =>{
-    const productos_carrito = cargarProductoCarrito();
-    return productos_carrito.reduce((total, item) => total += item.precio, 0);
+    const Productos_carrito = cargarProductoCarrito();
+    return Productos_carrito.reduce((total, item) => total += item.precio, 0);
 }
 
 const renderBotonCarrito = () => {

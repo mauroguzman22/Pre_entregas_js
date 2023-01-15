@@ -10,7 +10,7 @@ const guardarProductosLS = (Productos) => {
     localStorage.setItem("Productos", JSON.stringify(Productos));
 } 
 
-const cargarProdcutosLS = () => {
+const cargarProductosLS = () => {
     return JSON.parse(localStorage.getItem("Productos")) || [];
 } 
 

@@ -1,5 +1,5 @@
 const renderProductos = () => {
-    const Productos = cargarProdcutosLS ();
+    const Productos = cargarProductosLS ();
     let salida = "";
     for (let Producto of Productos){
         salida += `<div class="card">
