@@ -17,7 +17,7 @@ const agregarAlCarrito = (id) => {
     console.log(Productos_carrito)
     const Producto = Productos.find(item => item.id === id)
     console.log(Producto)
-    productos_carrito.push(Producto);
+    Productos_carrito.push(Producto);
     console.log(Productos_carrito)
     guardarProductosCarrito(Productos_carrito);
     renderBotonCarrito();
