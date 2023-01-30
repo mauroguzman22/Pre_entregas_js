@@ -3,7 +3,10 @@ const productos = [
     {id:2, nombre: "Contabilidad General", precio:80000, imagen: "Auditorías-1.jpg"},
     {id:3, nombre: "Armado de papeles de trabajo", precio:100000, imagen: "Auditorías-1.jpg"},
     {id:4, nombre: "Facturacion", precio:10000, imagen: "Auditorías-1.jpg"},
-    {id:5, nombre: "Armado de Balances", precio:300000, imagen: "Auditorías-1.jpg"},
+    {id:5, nombre: "Conciliaciones Bancarias", precio:50000, imagen: "Auditorías-1.jpg"},
+    {id:6, nombre: "Inversiones", precio:70000, imagen: "Auditorías-1.jpg"},
+    {id:7, nombre: "Bitcoin Management", precio:450000, imagen: "Auditorías-1.jpg"},
+    {id:8, nombre: "Monotributo", precio: 50000, imagen: "Auditorías-1.jpg"},
 ];
 
 const guardarProductosLS = (productos) => {
